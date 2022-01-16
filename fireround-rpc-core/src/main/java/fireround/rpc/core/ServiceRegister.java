@@ -21,7 +21,7 @@ public class ServiceRegister {
         init();
     }
 
-    public <T> void register(String serviceName, Object obj) {
+    public <T> void register(String serviceName, T obj) {
         System.out.println("Register service: " + obj.getClass().getCanonicalName());
         registeredClass.put(serviceName, obj);
     }

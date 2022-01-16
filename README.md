@@ -7,3 +7,7 @@
 It is just an example for rpc. For self-understanding.
 
 If you have any question about RPC, welcome to communication!
+
+## TODO
+* bytecode-aop for client replace reflect
+* generate bytecode replace reflect
