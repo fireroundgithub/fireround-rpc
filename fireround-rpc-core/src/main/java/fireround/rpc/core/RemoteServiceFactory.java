@@ -24,6 +24,8 @@ public class RemoteServiceFactory {
         @Override
         public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
             RpcRequest rpcRequest = new RpcRequest(method.getName(), proxy.getClass().getInterfaces()[0].getCanonicalName(), args);
+            
+            // auto detect
             Socket socket = new Socket("localhost", 8080);
 
             RpcResponse rpcResponse;
